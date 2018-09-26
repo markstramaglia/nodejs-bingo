@@ -1,0 +1,13 @@
+/* **************************************************** **
+ * Program: Multiplayer Bingo using Node.js
+ *  Author: Mark Stramaglia <markstramaglia@gmail.com>
+ *    Date: 9/25/2008
+ * **************************************************** */
+ 
+var express = require('express')
+var app = express()
+var port = 8080
+
+app.get('/', (req, res) => res.send('Welcome to Multiplayer Bingo!'))
+
+app.listen(port, () => console.log('Example app listening on port ${port}!'))
